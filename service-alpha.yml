@@ -10,3 +10,9 @@ eureka:
 
 alpha:
   description: World! (Provided by the configuration server)
+
+---
+spring:
+  profiles: container
+server:
+  port: 8080
