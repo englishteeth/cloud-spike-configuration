@@ -10,3 +10,9 @@ eureka:
 
 beta:
   description: from the Beta service.
+
+---
+spring:
+  profiles: container
+server:
+  port: 8080
