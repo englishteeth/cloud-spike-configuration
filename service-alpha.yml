@@ -5,9 +5,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-  instance:
-    hostname: localhost
-    preferIpAddress: false    
     
 alpha:
   description: World! (Provided by the configuration server)
@@ -22,7 +19,4 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://cluster-discovery:8761/eureka/
-  instance:
-    hostname: service-alpha
-    preferIpAddress: false
  
