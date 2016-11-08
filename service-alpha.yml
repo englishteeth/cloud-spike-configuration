@@ -17,5 +17,5 @@ server:
 
 eureka:
   instance:
-    hostname: ${DEPLOY_HOST:svc-host}
+    hostname: ${spring.application.name}
     prefer-ip-address: false
