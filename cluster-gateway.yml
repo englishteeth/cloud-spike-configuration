@@ -17,3 +17,11 @@ spring:
   profiles: container
 server:
   port: 8080
+
+eureka:
+  instance:
+    hostname: inf-host
+    prefer-ip-address: false
+  client:
+    serviceUrl:
+      defaultZone: http://inf-host:8761/eureka/
