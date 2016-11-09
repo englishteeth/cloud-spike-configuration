@@ -12,12 +12,10 @@ alpha:
 ---
 spring:
   profiles: container
-server:
-  port: 8080
 
 eureka:
   instance:
-    hostname: ${spring.application.name}
+    hostname: ${DEPLOY_HOST:svc-host}
     prefer-ip-address: false
   client:
     serviceUrl:
