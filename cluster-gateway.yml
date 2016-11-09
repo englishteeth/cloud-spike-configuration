@@ -15,12 +15,10 @@ endpoints:
 ---
 spring:
   profiles: container
-server:
-  port: 8080
 
 eureka:
   instance:
-    hostname: inf-host
+    hostname: ${DEPLOY_HOST:inf-host}
     prefer-ip-address: false
   client:
     serviceUrl:
